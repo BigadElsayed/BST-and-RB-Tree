@@ -1,4 +1,7 @@
 package com.assignment2;
+import org.slf4j.LoggerFactory;
+import ch.qos.logback.classic.Level;
+import ch.qos.logback.classic.Logger;
 
 
 import java.util.Arrays;
@@ -6,6 +9,11 @@ import java.util.List;
 import java.util.Random;
 
 public class Benchmark {
+
+    static {
+        Logger root = (Logger) LoggerFactory.getLogger(org.slf4j.Logger.ROOT_LOGGER_NAME);
+        root.setLevel(Level.ERROR);
+    }
 
     private static double[] computeStats(long[] times) {
         double[] stats = new double[3];
