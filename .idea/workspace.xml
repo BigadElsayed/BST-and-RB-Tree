@@ -6,16 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="43406a83-640a-4bc5-a778-f68d3ab95215" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment2/BST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assignment2/BST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment2/Benchmark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assignment2/Benchmark.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assignment2/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment2/RBTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assignment2/RBTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment2/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assignment2/Validator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resoursces/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resoursces/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/assignment2/BST.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assignment2/BST.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/assignment2/Benchmark.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assignment2/Benchmark.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/assignment2/RBTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assignment2/RBTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/assignment2/Validator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assignment2/Validator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmark_results.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resoursces/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/assignment2/BSTTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/assignment2/BSTTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/assignment2/RBTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/assignment2/RBTreeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +43,14 @@
   &quot;keyToString&quot;: {
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BSTTest.testContains.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BSTTest.testDelete.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BSTTest.testInOrder.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BSTTest.testInsert.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RBTreeTest.testContains.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RBTreeTest.testDelete.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RBTreeTest.testInsert.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RBTreeTest.testInsertAndBalance.executor&quot;: &quot;Run&quot;,
     &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -75,9 +77,8 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.assignment2.Main" />
+  <component name="RunManager" selected="JUnit.RBTreeTest.testInOrder">
+    <configuration name="RBTreeTest.testContains" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bst-rbtree" />
       <extension name="coverage">
         <pattern>
@@ -85,13 +86,85 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.assignment2" />
+      <option name="MAIN_CLASS_NAME" value="com.assignment2.RBTreeTest" />
+      <option name="METHOD_NAME" value="testContains" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RBTreeTest.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bst-rbtree" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.assignment2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.assignment2" />
+      <option name="MAIN_CLASS_NAME" value="com.assignment2.RBTreeTest" />
+      <option name="METHOD_NAME" value="testDelete" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RBTreeTest.testInOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bst-rbtree" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.assignment2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.assignment2" />
+      <option name="MAIN_CLASS_NAME" value="com.assignment2.RBTreeTest" />
+      <option name="METHOD_NAME" value="testInOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RBTreeTest.testRandomFlow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bst-rbtree" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.assignment2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.assignment2" />
+      <option name="MAIN_CLASS_NAME" value="com.assignment2.RBTreeTest" />
+      <option name="METHOD_NAME" value="testRandomFlow" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RBTreeTest.testRootOperations" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bst-rbtree" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.assignment2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.assignment2" />
+      <option name="MAIN_CLASS_NAME" value="com.assignment2.RBTreeTest" />
+      <option name="METHOD_NAME" value="testRootOperations" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.RBTreeTest.testInOrder" />
+        <item itemvalue="JUnit.RBTreeTest.testRootOperations" />
+        <item itemvalue="JUnit.RBTreeTest.testRandomFlow" />
+        <item itemvalue="JUnit.RBTreeTest.testContains" />
+        <item itemvalue="JUnit.RBTreeTest.testDelete" />
       </list>
     </recent_temporary>
   </component>
@@ -110,7 +183,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1775635659856</updated>
-      <workItem from="1775635661116" duration="31706000" />
+      <workItem from="1775635661116" duration="34516000" />
     </task>
     <servers />
   </component>
