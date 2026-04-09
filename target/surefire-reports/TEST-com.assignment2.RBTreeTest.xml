@@ -1,0 +1,989 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.assignment2.RBTreeTest" time="0.041" tests="7" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Lenovo\OneDrive\Documents\GitHub\BST_and_RB_Tree\target\test-classes;C:\Users\Lenovo\OneDrive\Documents\GitHub\BST_and_RB_Tree\target\classes;C:\Users\Lenovo\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.0\junit-jupiter-5.10.0.jar;C:\Users\Lenovo\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\Lenovo\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Lenovo\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\Lenovo\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Lenovo\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.0\junit-jupiter-params-5.10.0.jar;C:\Users\Lenovo\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\Lenovo\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;C:\Users\Lenovo\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\Lenovo\.m2\repository\ch\qos\logback\logback-classic\1.4.11\logback-classic-1.4.11.jar;C:\Users\Lenovo\.m2\repository\ch\qos\logback\logback-core\1.4.11\logback-core-1.4.11.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Africa/Cairo"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
+    <property name="sun.java.command" value="C:\Users\Lenovo\AppData\Local\Temp\surefire8236800287590598301\surefirebooter-20260409141559700_3.jar C:\Users\Lenovo\AppData\Local\Temp\surefire8236800287590598301 2026-04-09T14-15-59_479-jvmRun1 surefire-20260409141559700_1tmp surefire_0-20260409141559700_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Lenovo\OneDrive\Documents\GitHub\BST_and_RB_Tree\target\test-classes;C:\Users\Lenovo\OneDrive\Documents\GitHub\BST_and_RB_Tree\target\classes;C:\Users\Lenovo\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.0\junit-jupiter-5.10.0.jar;C:\Users\Lenovo\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\Lenovo\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Lenovo\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\Lenovo\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Lenovo\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.0\junit-jupiter-params-5.10.0.jar;C:\Users\Lenovo\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\Lenovo\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;C:\Users\Lenovo\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\Lenovo\.m2\repository\ch\qos\logback\logback-classic\1.4.11\logback-classic-1.4.11.jar;C:\Users\Lenovo\.m2\repository\ch\qos\logback\logback-core\1.4.11\logback-core-1.4.11.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Lenovo"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Lenovo\OneDrive\Documents\GitHub\BST_and_RB_Tree"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Lenovo\AppData\Local\Temp\surefire8236800287590598301\surefirebooter-20260409141559700_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.12+8-LTS-286"/>
+    <property name="user.name" value="Lenovo"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Lenovo\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Lenovo\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.12"/>
+    <property name="user.dir" value="C:\Users\Lenovo\OneDrive\Documents\GitHub\BST_and_RB_Tree"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Eclipse Adoptium\jdk-21.0.9.10-hotspot\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python314\Scripts\;C:\Python314\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\mingw64\bin;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;D:\Programs\GIT\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;D:\Programs\apache-maven-3.9.14-bin\apache-maven-3.9.14\bin;C:\Users\Lenovo\AppData\Local\Microsoft\WindowsApps;C:\Users\Lenovo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Lenovo\AppData\Roaming\npm;C:\Program Files\Apache\maven\apache-maven-3.9.x\bin;C:\Program Files\Abache\maven\apache-maven-3.9.11\bin;C:\Program Files\Java\jdk-17\bin;C:\Users\Lenovo\AppData\Local\GitHubDesktop\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.12+8-LTS-286"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testRandomFlow" classname="com.assignment2.RBTreeTest" time="0.024">
+    <system-out><![CDATA[14:16:00.595 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 130 
+14:16:00.595 [main] DEBUG com.assignment2.RBTree -- Tree is empty , Creating new RBTree Root with value : 130 
+14:16:00.595 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 763 
+14:16:00.595 [main] DEBUG com.assignment2.RBTree -- Inserting 763 as child of 130 
+14:16:00.595 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 763
+14:16:00.595 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.595 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 763
+14:16:00.595 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 248 
+14:16:00.595 [main] DEBUG com.assignment2.RBTree -- Inserting 248 as child of 763 
+14:16:00.595 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 248
+14:16:00.595 [main] DEBUG com.assignment2.RBTree -- Case 1 in Fixation
+14:16:00.595 [main] DEBUG com.assignment2.RBTree -- Right rotating node: 763 (parent: 130, left child: 248)
+14:16:00.595 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.599 [main] DEBUG com.assignment2.RBTree -- Left rotating node: 130 (parent: NIL, right child: 248)
+14:16:00.599 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.599 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 248
+14:16:00.600 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 884 
+14:16:00.600 [main] DEBUG com.assignment2.RBTree -- Inserting 884 as child of 763 
+14:16:00.600 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 884
+14:16:00.600 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.600 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.600 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 884
+14:16:00.600 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 970 
+14:16:00.600 [main] DEBUG com.assignment2.RBTree -- Inserting 970 as child of 884 
+14:16:00.600 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 970
+14:16:00.600 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.600 [main] DEBUG com.assignment2.RBTree -- Left rotating node: 763 (parent: 248, right child: 884)
+14:16:00.600 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.600 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 970
+14:16:00.600 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 525 
+14:16:00.600 [main] DEBUG com.assignment2.RBTree -- Inserting 525 as child of 763 
+14:16:00.601 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 525
+14:16:00.601 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.601 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.601 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 525
+14:16:00.601 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 505 
+14:16:00.601 [main] DEBUG com.assignment2.RBTree -- Inserting 505 as child of 525 
+14:16:00.601 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 505
+14:16:00.601 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.601 [main] DEBUG com.assignment2.RBTree -- Right rotating node: 763 (parent: 884, left child: 525)
+14:16:00.601 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.601 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 505
+14:16:00.601 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 918 
+14:16:00.601 [main] DEBUG com.assignment2.RBTree -- Inserting 918 as child of 970 
+14:16:00.601 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 918
+14:16:00.601 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.601 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 918
+14:16:00.601 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 519 
+14:16:00.601 [main] DEBUG com.assignment2.RBTree -- Inserting 519 as child of 505 
+14:16:00.601 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 519
+14:16:00.601 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.601 [main] DEBUG com.assignment2.RBTree -- Case 1 in Fixation
+14:16:00.601 [main] DEBUG com.assignment2.RBTree -- Right rotating node: 884 (parent: 248, left child: 525)
+14:16:00.601 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.602 [main] DEBUG com.assignment2.RBTree -- Left rotating node: 248 (parent: NIL, right child: 525)
+14:16:00.602 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.602 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 519
+14:16:00.602 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 93 
+14:16:00.602 [main] DEBUG com.assignment2.RBTree -- Inserting 93 as child of 130 
+14:16:00.602 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 93
+14:16:00.602 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.602 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 93
+14:16:00.602 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 182 
+14:16:00.602 [main] DEBUG com.assignment2.RBTree -- Inserting 182 as child of 130 
+14:16:00.602 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 182
+14:16:00.602 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.602 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 182
+14:16:00.602 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 502 
+14:16:00.602 [main] DEBUG com.assignment2.RBTree -- Inserting 502 as child of 505 
+14:16:00.602 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 502
+14:16:00.602 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.602 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 502
+14:16:00.602 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 276 
+14:16:00.602 [main] DEBUG com.assignment2.RBTree -- Inserting 276 as child of 502 
+14:16:00.602 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 276
+14:16:00.602 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.602 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.602 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.602 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 276
+14:16:00.602 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 292 
+14:16:00.602 [main] DEBUG com.assignment2.RBTree -- Inserting 292 as child of 276 
+14:16:00.602 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 292
+14:16:00.602 [main] DEBUG com.assignment2.RBTree -- Case 1 in Fixation
+14:16:00.602 [main] DEBUG com.assignment2.RBTree -- Left rotating node: 276 (parent: 502, right child: 292)
+14:16:00.602 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.602 [main] DEBUG com.assignment2.RBTree -- Right rotating node: 502 (parent: 505, left child: 292)
+14:16:00.602 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.602 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 292
+14:16:00.602 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 476 
+14:16:00.602 [main] DEBUG com.assignment2.RBTree -- Inserting 476 as child of 502 
+14:16:00.602 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 476
+14:16:00.603 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.603 [main] DEBUG com.assignment2.RBTree -- Case 1 in Fixation
+14:16:00.603 [main] DEBUG com.assignment2.RBTree -- Right rotating node: 505 (parent: 248, left child: 292)
+14:16:00.603 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.603 [main] DEBUG com.assignment2.RBTree -- Left rotating node: 248 (parent: 525, right child: 292)
+14:16:00.603 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.603 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 476
+14:16:00.603 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 32 
+14:16:00.603 [main] DEBUG com.assignment2.RBTree -- Inserting 32 as child of 93 
+14:16:00.603 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 32
+14:16:00.603 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.603 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.603 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.603 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 32
+14:16:00.603 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 456 
+14:16:00.603 [main] DEBUG com.assignment2.RBTree -- Inserting 456 as child of 476 
+14:16:00.603 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 456
+14:16:00.603 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.603 [main] DEBUG com.assignment2.RBTree -- Right rotating node: 502 (parent: 505, left child: 476)
+14:16:00.603 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.603 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 456
+14:16:00.603 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 170 
+14:16:00.604 [main] DEBUG com.assignment2.RBTree -- Inserting 170 as child of 182 
+14:16:00.604 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 170
+14:16:00.604 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.604 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 170
+14:16:00.604 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 743 
+14:16:00.604 [main] DEBUG com.assignment2.RBTree -- Inserting 743 as child of 763 
+14:16:00.604 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 743
+14:16:00.604 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.604 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 743
+14:16:00.604 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 209 
+14:16:00.604 [main] DEBUG com.assignment2.RBTree -- Inserting 209 as child of 182 
+14:16:00.604 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 209
+14:16:00.604 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.604 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 209
+14:16:00.604 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 400 
+14:16:00.604 [main] DEBUG com.assignment2.RBTree -- Inserting 400 as child of 456 
+14:16:00.604 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 400
+14:16:00.604 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.604 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.604 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 400
+14:16:00.604 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 863 
+14:16:00.604 [main] DEBUG com.assignment2.RBTree -- Inserting 863 as child of 763 
+14:16:00.604 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 863
+14:16:00.604 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.604 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 863
+14:16:00.604 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 226 
+14:16:00.604 [main] DEBUG com.assignment2.RBTree -- Inserting 226 as child of 209 
+14:16:00.604 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 226
+14:16:00.604 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.604 [main] DEBUG com.assignment2.RBTree -- Case 1 in Fixation
+14:16:00.604 [main] DEBUG com.assignment2.RBTree -- Left rotating node: 130 (parent: 248, right child: 182)
+14:16:00.604 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.604 [main] DEBUG com.assignment2.RBTree -- Right rotating node: 248 (parent: 292, left child: 182)
+14:16:00.605 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.605 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 226
+14:16:00.605 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 913 
+14:16:00.605 [main] DEBUG com.assignment2.RBTree -- Inserting 913 as child of 918 
+14:16:00.605 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 913
+14:16:00.605 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.605 [main] DEBUG com.assignment2.RBTree -- Right rotating node: 970 (parent: 884, left child: 918)
+14:16:00.605 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.605 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 913
+14:16:00.605 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 243 
+14:16:00.605 [main] DEBUG com.assignment2.RBTree -- Inserting 243 as child of 226 
+14:16:00.605 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 243
+14:16:00.605 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.605 [main] DEBUG com.assignment2.RBTree -- Left rotating node: 209 (parent: 248, right child: 226)
+14:16:00.606 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.606 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 243
+14:16:00.606 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 241 
+14:16:00.606 [main] DEBUG com.assignment2.RBTree -- Inserting 241 as child of 243 
+14:16:00.606 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 241
+14:16:00.606 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.606 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.606 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.606 [main] DEBUG com.assignment2.RBTree -- Right rotating node: 525 (parent: NIL, left child: 292)
+14:16:00.606 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.606 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 241
+14:16:00.606 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 30 
+14:16:00.606 [main] DEBUG com.assignment2.RBTree -- Inserting 30 as child of 32 
+14:16:00.606 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 30
+14:16:00.606 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.606 [main] DEBUG com.assignment2.RBTree -- Right rotating node: 93 (parent: 130, left child: 32)
+14:16:00.606 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.606 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 30
+14:16:00.606 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 458 
+14:16:00.606 [main] DEBUG com.assignment2.RBTree -- Inserting 458 as child of 456 
+14:16:00.606 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 458
+14:16:00.606 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.606 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 458
+14:16:00.606 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 387 
+14:16:00.606 [main] DEBUG com.assignment2.RBTree -- Inserting 387 as child of 400 
+14:16:00.606 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 387
+14:16:00.606 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.606 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.606 [main] DEBUG com.assignment2.RBTree -- Right rotating node: 505 (parent: 525, left child: 476)
+14:16:00.606 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.607 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 387
+14:16:00.607 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 246 
+14:16:00.607 [main] DEBUG com.assignment2.RBTree -- Inserting 246 as child of 243 
+14:16:00.607 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 246
+14:16:00.607 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.607 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 246
+14:16:00.607 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 730 
+14:16:00.607 [main] DEBUG com.assignment2.RBTree -- Inserting 730 as child of 743 
+14:16:00.607 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 730
+14:16:00.607 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.607 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.607 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 730
+14:16:00.607 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 756 
+14:16:00.607 [main] DEBUG com.assignment2.RBTree -- Inserting 756 as child of 743 
+14:16:00.607 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 756
+14:16:00.607 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.607 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 756
+14:16:00.607 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 430 
+14:16:00.607 [main] DEBUG com.assignment2.RBTree -- Inserting 430 as child of 400 
+14:16:00.607 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 430
+14:16:00.607 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.607 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 430
+14:16:00.607 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 85 
+14:16:00.607 [main] DEBUG com.assignment2.RBTree -- Inserting 85 as child of 93 
+14:16:00.607 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 85
+14:16:00.607 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.608 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.608 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 85
+14:16:00.608 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 217 
+14:16:00.608 [main] DEBUG com.assignment2.RBTree -- Inserting 217 as child of 209 
+14:16:00.608 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 217
+14:16:00.608 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.608 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 217
+14:16:00.608 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 727 
+14:16:00.608 [main] DEBUG com.assignment2.RBTree -- Inserting 727 as child of 730 
+14:16:00.608 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 727
+14:16:00.608 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.608 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.608 [main] DEBUG com.assignment2.RBTree -- Right rotating node: 884 (parent: 525, left child: 763)
+14:16:00.608 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.608 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 727
+14:16:00.608 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 212 
+14:16:00.608 [main] DEBUG com.assignment2.RBTree -- Inserting 212 as child of 217 
+14:16:00.608 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 212
+14:16:00.608 [main] DEBUG com.assignment2.RBTree -- Case 1 in Fixation
+14:16:00.608 [main] DEBUG com.assignment2.RBTree -- Right rotating node: 217 (parent: 209, left child: 212)
+14:16:00.608 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.608 [main] DEBUG com.assignment2.RBTree -- Left rotating node: 209 (parent: 226, right child: 212)
+14:16:00.608 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.608 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 212
+14:16:00.608 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 93 
+14:16:00.608 [main] DEBUG com.assignment2.RBTree -- Value 93 already exists in tree, ignoring
+14:16:00.608 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 713 
+14:16:00.608 [main] DEBUG com.assignment2.RBTree -- Inserting 713 as child of 727 
+14:16:00.609 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 713
+14:16:00.609 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.609 [main] DEBUG com.assignment2.RBTree -- Right rotating node: 730 (parent: 743, left child: 727)
+14:16:00.609 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.609 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 713
+14:16:00.609 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 164 
+14:16:00.609 [main] DEBUG com.assignment2.RBTree -- Inserting 164 as child of 170 
+14:16:00.609 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 164
+14:16:00.609 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.609 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 164
+14:16:00.609 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 379 
+14:16:00.609 [main] DEBUG com.assignment2.RBTree -- Inserting 379 as child of 387 
+14:16:00.609 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 379
+14:16:00.609 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.609 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.609 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.609 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.609 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 379
+14:16:00.609 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 65 
+14:16:00.609 [main] DEBUG com.assignment2.RBTree -- Inserting 65 as child of 85 
+14:16:00.609 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 65
+14:16:00.609 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.609 [main] DEBUG com.assignment2.RBTree -- Right rotating node: 93 (parent: 32, left child: 85)
+14:16:00.609 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.609 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 65
+14:16:00.609 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 823 
+14:16:00.609 [main] DEBUG com.assignment2.RBTree -- Inserting 823 as child of 863 
+14:16:00.609 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 823
+14:16:00.609 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.609 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 823
+14:16:00.609 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 737 
+14:16:00.609 [main] DEBUG com.assignment2.RBTree -- Inserting 737 as child of 730 
+14:16:00.609 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 737
+14:16:00.609 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.609 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.610 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.610 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 737
+14:16:00.610 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 975 
+14:16:00.610 [main] DEBUG com.assignment2.RBTree -- Inserting 975 as child of 970 
+14:16:00.610 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 975
+14:16:00.610 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.610 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.610 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 975
+14:16:00.610 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 534 
+14:16:00.610 [main] DEBUG com.assignment2.RBTree -- Inserting 534 as child of 713 
+14:16:00.610 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 534
+14:16:00.610 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.610 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 534
+14:16:00.610 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 807 
+14:16:00.610 [main] DEBUG com.assignment2.RBTree -- Inserting 807 as child of 823 
+14:16:00.610 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 807
+14:16:00.610 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.610 [main] DEBUG com.assignment2.RBTree -- Right rotating node: 863 (parent: 884, left child: 823)
+14:16:00.610 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.610 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 807
+14:16:00.610 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 935 
+14:16:00.610 [main] DEBUG com.assignment2.RBTree -- Inserting 935 as child of 970 
+14:16:00.610 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 935
+14:16:00.610 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.610 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 935
+14:16:00.610 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 157 
+14:16:00.610 [main] DEBUG com.assignment2.RBTree -- Inserting 157 as child of 164 
+14:16:00.610 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 157
+14:16:00.610 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.610 [main] DEBUG com.assignment2.RBTree -- Right rotating node: 170 (parent: 130, left child: 164)
+14:16:00.610 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.610 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 157
+14:16:00.610 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 443 
+14:16:00.610 [main] DEBUG com.assignment2.RBTree -- Inserting 443 as child of 430 
+14:16:00.610 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 443
+14:16:00.610 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.610 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 443
+14:16:00.610 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 193 
+14:16:00.611 [main] DEBUG com.assignment2.RBTree -- Inserting 193 as child of 209 
+14:16:00.611 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 193
+14:16:00.611 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.611 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.611 [main] DEBUG com.assignment2.RBTree -- Right rotating node: 248 (parent: 182, left child: 226)
+14:16:00.611 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.611 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 193
+14:16:00.611 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 440 
+14:16:00.611 [main] DEBUG com.assignment2.RBTree -- Inserting 440 as child of 443 
+14:16:00.611 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 440
+14:16:00.611 [main] DEBUG com.assignment2.RBTree -- Case 1 in Fixation
+14:16:00.611 [main] DEBUG com.assignment2.RBTree -- Right rotating node: 443 (parent: 430, left child: 440)
+14:16:00.611 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.611 [main] DEBUG com.assignment2.RBTree -- Left rotating node: 430 (parent: 400, right child: 440)
+14:16:00.611 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.611 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 440
+14:16:00.611 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 558 
+14:16:00.611 [main] DEBUG com.assignment2.RBTree -- Inserting 558 as child of 534 
+14:16:00.611 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 558
+14:16:00.611 [main] DEBUG com.assignment2.RBTree -- Case 1 in Fixation
+14:16:00.611 [main] DEBUG com.assignment2.RBTree -- Left rotating node: 534 (parent: 713, right child: 558)
+14:16:00.611 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.611 [main] DEBUG com.assignment2.RBTree -- Right rotating node: 713 (parent: 727, left child: 558)
+14:16:00.611 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.611 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 558
+14:16:00.611 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 756 
+14:16:00.611 [main] DEBUG com.assignment2.RBTree -- Value 756 already exists in tree, ignoring
+14:16:00.611 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 160 
+14:16:00.611 [main] DEBUG com.assignment2.RBTree -- Inserting 160 as child of 157 
+14:16:00.611 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 160
+14:16:00.611 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.611 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.611 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 160
+14:16:00.611 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 410 
+14:16:00.611 [main] DEBUG com.assignment2.RBTree -- Inserting 410 as child of 430 
+14:16:00.611 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 410
+14:16:00.611 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.611 [main] DEBUG com.assignment2.RBTree -- Case 1 in Fixation
+14:16:00.612 [main] DEBUG com.assignment2.RBTree -- Left rotating node: 400 (parent: 456, right child: 440)
+14:16:00.612 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.612 [main] DEBUG com.assignment2.RBTree -- Right rotating node: 456 (parent: 476, left child: 440)
+14:16:00.612 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.612 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 410
+14:16:00.612 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 713 
+14:16:00.612 [main] DEBUG com.assignment2.RBTree -- Value 713 already exists in tree, ignoring
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 59 
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Inserting 59 as child of 65 
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 59
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 59
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 261 
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Inserting 261 as child of 276 
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 261
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 261
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 3 
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Inserting 3 as child of 30 
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 3
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 3
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 897 
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Inserting 897 as child of 913 
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 897
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 897
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 819 
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Inserting 819 as child of 807 
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 819
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 819
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 552 
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Inserting 552 as child of 534 
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 552
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Right rotating node: 743 (parent: 763, left child: 727)
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 552
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 601 
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Inserting 601 as child of 713 
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 601
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 601
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 94 
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Inserting 94 as child of 93 
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 94
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 94
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 794 
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Inserting 794 as child of 807 
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 794
+14:16:00.613 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.614 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 794
+14:16:00.614 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 798 
+14:16:00.614 [main] DEBUG com.assignment2.RBTree -- Inserting 798 as child of 794 
+14:16:00.614 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 798
+14:16:00.614 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.614 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.614 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.614 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.614 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 798
+14:16:00.614 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 719 
+14:16:00.614 [main] DEBUG com.assignment2.RBTree -- Inserting 719 as child of 713 
+14:16:00.614 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 719
+14:16:00.614 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.614 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 719
+14:16:00.614 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 775 
+14:16:00.614 [main] DEBUG com.assignment2.RBTree -- Inserting 775 as child of 794 
+14:16:00.614 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 775
+14:16:00.614 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.614 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 775
+14:16:00.614 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 499 
+14:16:00.614 [main] DEBUG com.assignment2.RBTree -- Inserting 499 as child of 502 
+14:16:00.614 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 499
+14:16:00.614 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.614 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 499
+14:16:00.614 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 390 
+14:16:00.614 [main] DEBUG com.assignment2.RBTree -- Inserting 390 as child of 387 
+14:16:00.614 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 390
+14:16:00.614 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.614 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 390
+14:16:00.614 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 501 
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Inserting 501 as child of 499 
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 501
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Case 1 in Fixation
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Left rotating node: 499 (parent: 502, right child: 501)
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Right rotating node: 502 (parent: 505, left child: 501)
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 501
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 453 
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Inserting 453 as child of 443 
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 453
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 453
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 429 
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Inserting 429 as child of 410 
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 429
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Case 1 in Fixation
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Left rotating node: 410 (parent: 430, right child: 429)
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Right rotating node: 430 (parent: 400, left child: 429)
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 429
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 573 
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Inserting 573 as child of 601 
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 573
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 573
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 733 
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Inserting 733 as child of 737 
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 733
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Case 1 in Fixation
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Right rotating node: 737 (parent: 730, left child: 733)
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Left rotating node: 730 (parent: 743, right child: 733)
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 733
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 986 
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Inserting 986 as child of 975 
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 986
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 986
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 460 
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Inserting 460 as child of 458 
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 460
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 460
+14:16:00.615 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 625 
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Inserting 625 as child of 601 
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 625
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 625
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 93 
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Value 93 already exists in tree, ignoring
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 200 
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Inserting 200 as child of 193 
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 200
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Case 1 in Fixation
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Left rotating node: 193 (parent: 209, right child: 200)
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Right rotating node: 209 (parent: 212, left child: 200)
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 200
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 594 
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Inserting 594 as child of 573 
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 594
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Case 1 in Fixation
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Right rotating node: 713 (parent: 558, left child: 601)
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Left rotating node: 558 (parent: 727, right child: 601)
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 594
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 403 
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Inserting 403 as child of 410 
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 403
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 403
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 142 
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Inserting 142 as child of 157 
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 142
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 142
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 807 
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Value 807 already exists in tree, ignoring
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 593 
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Inserting 593 as child of 594 
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 593
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Case 1 in Fixation
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Right rotating node: 594 (parent: 573, left child: 593)
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Left rotating node: 573 (parent: 558, right child: 593)
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 593
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 109 
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Inserting 109 as child of 94 
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 109
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Left rotating node: 93 (parent: 85, right child: 94)
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 109
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 744 
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Inserting 744 as child of 756 
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 744
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 744
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 398 
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Inserting 398 as child of 390 
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 398
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 398
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 479 
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Inserting 479 as child of 499 
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 479
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 479
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 747 
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Inserting 747 as child of 744 
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 747
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Case 1 in Fixation
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Left rotating node: 744 (parent: 756, right child: 747)
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Right rotating node: 756 (parent: 743, left child: 747)
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 747
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 696 
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Inserting 696 as child of 625 
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 696
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 696
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 923 
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Inserting 923 as child of 935 
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 923
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 923
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 295 
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Inserting 295 as child of 379 
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 295
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 295
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 759 
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Inserting 759 as child of 756 
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 759
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 759
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 823 
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Value 823 already exists in tree, ignoring
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 229 
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Inserting 229 as child of 241 
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 229
+14:16:00.616 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.617 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.617 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.617 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 229
+14:16:00.617 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 976 
+14:16:00.617 [main] DEBUG com.assignment2.RBTree -- Inserting 976 as child of 986 
+14:16:00.617 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 976
+14:16:00.617 [main] DEBUG com.assignment2.RBTree -- Case 1 in Fixation
+14:16:00.617 [main] DEBUG com.assignment2.RBTree -- Right rotating node: 986 (parent: 975, left child: 976)
+14:16:00.617 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.617 [main] DEBUG com.assignment2.RBTree -- Left rotating node: 975 (parent: 970, right child: 976)
+14:16:00.617 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.617 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 976
+14:16:00.617 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 476 
+14:16:00.617 [main] DEBUG com.assignment2.RBTree -- Value 476 already exists in tree, ignoring
+14:16:00.617 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 328 
+14:16:00.617 [main] DEBUG com.assignment2.RBTree -- Inserting 328 as child of 295 
+14:16:00.617 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 328
+14:16:00.617 [main] DEBUG com.assignment2.RBTree -- Case 1 in Fixation
+14:16:00.617 [main] DEBUG com.assignment2.RBTree -- Left rotating node: 295 (parent: 379, right child: 328)
+14:16:00.617 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.617 [main] DEBUG com.assignment2.RBTree -- Right rotating node: 379 (parent: 387, left child: 328)
+14:16:00.617 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.617 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 328
+14:16:00.617 [main] DEBUG com.assignment2.RBTree -- Deleting node 897 
+14:16:00.617 [main] DEBUG com.assignment2.RBTree -- Value 897 already exists in tree
+14:16:00.617 [main] DEBUG com.assignment2.RBTree -- Node 897 has no children
+14:16:00.617 [main] DEBUG com.assignment2.RBTree -- Delete completed successfully for value: 897
+14:16:00.617 [main] DEBUG com.assignment2.RBTree -- Checking if tree contains value: 897
+14:16:00.618 [main] DEBUG com.assignment2.RBTree -- Value 897 not found in tree
+]]></system-out>
+  </testcase>
+  <testcase name="testInsertAndBalance" classname="com.assignment2.RBTreeTest" time="0.003">
+    <system-out><![CDATA[14:16:00.620 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 1 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Tree is empty , Creating new RBTree Root with value : 1 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 2 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Inserting 2 as child of 1 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 2
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 2
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 3 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Inserting 3 as child of 2 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 3
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Left rotating node: 1 (parent: NIL, right child: 2)
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 3
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 4 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Inserting 4 as child of 3 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 4
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 4
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 5 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Inserting 5 as child of 4 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 5
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Left rotating node: 3 (parent: 2, right child: 4)
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 5
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 6 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Inserting 6 as child of 5 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 6
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 6
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 7 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Inserting 7 as child of 6 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 7
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Left rotating node: 5 (parent: 4, right child: 6)
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 7
+]]></system-out>
+  </testcase>
+  <testcase name="testRootOperations" classname="com.assignment2.RBTreeTest" time="0.0">
+    <system-out><![CDATA[14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 100 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Tree is empty , Creating new RBTree Root with value : 100 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Deleting node 100 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Value 100 already exists in tree
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Node 100 has no children
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Transplanting replacement -1 to root
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Starting Deletion fixup for node 100
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Deletion fixup complete. Ensuring replacement node is BLACK
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Delete completed successfully for value: 100
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Checking if tree contains value: 100
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Tree is empty, returning false
+]]></system-out>
+  </testcase>
+  <testcase name="testContains" classname="com.assignment2.RBTreeTest" time="0.0">
+    <system-out><![CDATA[14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 1 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Tree is empty , Creating new RBTree Root with value : 1 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 2 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Inserting 2 as child of 1 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 2
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 2
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 3 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Inserting 3 as child of 2 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 3
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Left rotating node: 1 (parent: NIL, right child: 2)
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 3
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 4 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Inserting 4 as child of 3 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 4
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 4
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 5 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Inserting 5 as child of 4 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 5
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Left rotating node: 3 (parent: 2, right child: 4)
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 5
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 10 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Inserting 10 as child of 5 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 10
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 10
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 20 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Inserting 20 as child of 10 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 20
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Left rotating node: 5 (parent: 4, right child: 10)
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 20
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 30 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Inserting 30 as child of 20 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 30
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Left rotating node: 2 (parent: NIL, right child: 4)
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 30
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 40 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Inserting 40 as child of 30 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 40
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Left rotating node: 20 (parent: 10, right child: 30)
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 40
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 50 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Inserting 50 as child of 40 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 50
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 50
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Checking if tree contains value: 20
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Value 20 found in tree
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Checking if tree contains value: 10
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Value 10 found in tree
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Checking if tree contains value: 30
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Value 30 found in tree
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Checking if tree contains value: 40
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Value 40 found in tree
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Checking if tree contains value: 50
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Value 50 found in tree
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Checking if tree contains value: 1
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Value 1 found in tree
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Checking if tree contains value: 2
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Value 2 found in tree
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Checking if tree contains value: 3
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Value 3 found in tree
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Checking if tree contains value: 4
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Value 4 found in tree
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Checking if tree contains value: 5
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Value 5 found in tree
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Checking if tree contains value: 7
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Value 7 not found in tree
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Checking if tree contains value: 8
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Value 8 not found in tree
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Checking if tree contains value: 9
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Value 9 not found in tree
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Checking if tree contains value: 11
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Value 11 not found in tree
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Checking if tree contains value: 12
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Value 12 not found in tree
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Checking if tree contains value: 13
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Value 13 not found in tree
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Checking if tree contains value: 101
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Value 101 not found in tree
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Checking if tree contains value: 102
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Value 102 not found in tree
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Checking if tree contains value: 103
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Value 103 not found in tree
+]]></system-out>
+  </testcase>
+  <testcase name="testDelete" classname="com.assignment2.RBTreeTest" time="0.0">
+    <system-out><![CDATA[14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 10 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Tree is empty , Creating new RBTree Root with value : 10 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 20 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Inserting 20 as child of 10 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 20
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 20
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 30 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Inserting 30 as child of 20 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 30
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Left rotating node: 10 (parent: NIL, right child: 20)
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 30
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 15 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Inserting 15 as child of 10 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 15
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 15
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 25 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Inserting 25 as child of 30 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 25
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 25
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Deleting node 20 
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Value 20 already exists in tree
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Node 20 has 2 children
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Successor is  25
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Delete completed successfully for value: 20
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Checking if tree contains value: 20
+14:16:00.623 [main] DEBUG com.assignment2.RBTree -- Value 20 not found in tree
+]]></system-out>
+  </testcase>
+  <testcase name="testInsert" classname="com.assignment2.RBTreeTest" time="0.011">
+    <system-out><![CDATA[14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 1 
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Tree is empty , Creating new RBTree Root with value : 1 
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 2 
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Inserting 2 as child of 1 
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 2
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 2
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 3 
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Inserting 3 as child of 2 
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 3
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Left rotating node: 1 (parent: NIL, right child: 2)
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 3
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 4 
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Inserting 4 as child of 3 
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 4
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 4
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 5 
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Inserting 5 as child of 4 
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 5
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Left rotating node: 3 (parent: 2, right child: 4)
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 5
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 6 
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Inserting 6 as child of 5 
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 6
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 6
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 6 
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Value 6 already exists in tree, ignoring
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 5 
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Value 5 already exists in tree, ignoring
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 4 
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Value 4 already exists in tree, ignoring
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 3 
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Value 3 already exists in tree, ignoring
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 2 
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Value 2 already exists in tree, ignoring
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 1 
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Value 1 already exists in tree, ignoring
+]]></system-out>
+  </testcase>
+  <testcase name="testInOrder" classname="com.assignment2.RBTreeTest" time="0.0">
+    <system-out><![CDATA[14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 50 
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Tree is empty , Creating new RBTree Root with value : 50 
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 30 
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Inserting 30 as child of 50 
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 30
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 30
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 70 
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Inserting 70 as child of 50 
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 70
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 70
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 20 
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Inserting 20 as child of 30 
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 20
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 20
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 40 
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Inserting 40 as child of 30 
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 40
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 40
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 60 
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Inserting 60 as child of 70 
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 60
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 60
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 80 
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Inserting 80 as child of 70 
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 80
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 80
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 10 
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Inserting 10 as child of 20 
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 10
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 10
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 100 
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Inserting 100 as child of 80 
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 100
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Case 0 in Fixation
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 100
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Inserting into RBTree value : 1 
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Inserting 1 as child of 10 
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Starting fixup for node 1
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Case 2 in Fixation
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Right rotating node: 20 (parent: 30, left child: 10)
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Fixup complete. Ensuring root is BLACK
+14:16:00.634 [main] DEBUG com.assignment2.RBTree -- Insert completed successfully for value: 1
+]]></system-out>
+  </testcase>
+</testsuite>
